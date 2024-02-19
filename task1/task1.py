@@ -1,4 +1,7 @@
-n, m = map(int, input().split(' '))
+import sys
+
+n, m = int(sys.argv[1]), int(sys.argv[2])
+
 nums = list(range(1, n+1))
 path = []
 i = 0

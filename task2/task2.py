@@ -1,6 +1,7 @@
+import sys
 import linecache
 
-path_circle, path_points = input().split()
+path_circle, path_points = sys.argv[1], sys.argv[2]
 
 center_x, center_y = map(int, linecache.getline(path_circle, 1).strip().split(' '))
 radius = int(linecache.getline(path_circle, 2).strip())

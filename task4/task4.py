@@ -1,4 +1,6 @@
-path_array = input()
+import sys
+
+path_array = sys.argv[1]
 nums = []
 
 with open(path_array) as file:

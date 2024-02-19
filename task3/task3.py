@@ -1,6 +1,7 @@
+import sys
 import json
 
-path_values, path_tests, path_report = input().split()
+path_values, path_tests, path_report = sys.argv[1], sys.argv[2], sys.argv[3]
 
 with open(path_values) as file:
     load_values = json.load(file)
